@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView( R.layout.activity_main );
+        Toolbar toolbar = (Toolbar) findViewById( R.id.menu_main );
+        setSupportActionBar( toolbar );
 
         // init tempo picker
         final NumberPicker tempoPicker = ( NumberPicker ) findViewById( R.id.tempoPicker );
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         ClickTimerTask ctt = new ClickTimerTask( beamClick );
 
         // convert tempo to ms
-        float fPeriodMs = 60 * 1000f / ( float ) tempo;
+        float fPeriodMs = 60 * 1000f / 2 / ( float ) tempo;
 
         int periodMs = Math.round( fPeriodMs );
         System.out.println( "tempo = " + tempo + ", ms = " + periodMs );
@@ -137,9 +137,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        //if (id == R.id.action_settings) {
+        //    return true;
+        //}
 
         return super.onOptionsItemSelected(item);
     }
