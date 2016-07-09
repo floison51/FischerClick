@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="click.android.sonak.fr.fisherclick.ClickActivity"
->
+    android:gravity="center_horizontal">
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
